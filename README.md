@@ -14,10 +14,14 @@ history
 6. b2 branch init
 7. b2 commit & push oring b2:b2
 
+
 課題
-==
+===
 * リモートのブランチの削除が追従に失敗する
 pull requstのマージ時に、すぐにブランチ削除するとだめっぽい？
 
 * ブランチ駆動は、マージするまで依存関係が
 開発が重たくなりそう
+
+* 追従のやり方間違えると壊れる
+　pullじゃなくてfetch-merge master
