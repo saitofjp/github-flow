@@ -64,7 +64,7 @@ mergeとrebase
 ---
 * mergeとrebaseの違い
    rebaseは、ベースの再構築　ハッシュが変わるよー
-   追跡するときはrebaseが良いらしい
+   コミットに含む直前のコミットが変わるためPushしたものをrebaseすると危険
 
 
 コミット操作
@@ -77,8 +77,18 @@ Pull Request
 ---
 コミットをまとめる
 * git merge --squash でブランチでの変更を1コミットにまとめてマージ
+sourcetreeで追ってくれない。。。
 * git rebase -i HEAD~~
 　　packをsquashにする
+　　色々魔法がある
+
+
+戻す
+---
+* git-revert
+ある特定リビジョン（過去にcommitしたバージョン）に戻すパッチを自動生成してコミットする
+* git-reset
+ある特定リビジョン（ryに戻す（戻したリビジョン以降を無かったことにする）
 
 
 その他
@@ -93,3 +103,6 @@ Pull Request
 
 * GIT_SSHに環境変数を設定すると、GITはそれでSSHする、plink.exeを登録する
 
+* 怖くないGit
+　rebaseとか丁寧。push後にrebaseするとpush出来ない理由とか/First Fowrad
+	http://www.slideshare.net/kotas/git-15276118
