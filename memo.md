@@ -2,7 +2,6 @@
 ===============
 * git-svnをweb stormで使いたいのだが？
 
-
 flow
 ====
 
@@ -61,26 +60,20 @@ upstream
 * git config --global push.default upstream
 
 mergeとrebase
----
+----
 * mergeとrebaseの違い
    rebaseは、ベースの再構築　ハッシュが変わるよー
-   コミットに含む直前のコミットが変わるためPushしたものをrebaseすると危険
+   コミットに含む直前のコミットが変わるためpush後にrebaseするとpush出来ない
 
 
-コミット操作
-----
-* rest コミットを取り消す
-* revertはgit resetと似ているが、作業ツリーを差し戻したという情報が作業履歴に残るのが異なる点だ。
-* cherry-pick　抜き取る
-
-Pull Request
+pull request
 ---
 コミットをまとめる
 * git merge --squash でブランチでの変更を1コミットにまとめてマージ
 sourcetreeで追ってくれない。。。
 * git rebase -i HEAD~~
-　　packをsquashにする
-　　色々魔法がある
+packをsquashにする
+他にも色々魔法がある
 
 
 戻す
@@ -90,19 +83,28 @@ sourcetreeで追ってくれない。。。
 * git-reset
 ある特定リビジョン（ryに戻す（戻したリビジョン以降を無かったことにする）
 
+pushされたものを完全に消すことはできない
+
+コミット操作
+----
+* cherry-pick　抜き取る
+
 
 その他
 ----
-* Web Stormで、git push先を変える
-　git push ダイアログの「Push current branch to alternative branch」をチェックして、名前入れて
-　"更新"を押すと先が変わる
-　でも追従先がかわらん。。。
-
-* Git 使い方 見出し一覧
-   http://transitive.info/article/git/
+* sslがああ
+git config --global http.sslVerify false
 
 * GIT_SSHに環境変数を設定すると、GITはそれでSSHする、plink.exeを登録する
 
+* Web Stormで、git push先を変える
+git push ダイアログの「Push current branch to alternative branch」をチェックして、名前入れて
+"更新"を押すと先が変わる
+でも追従先がかわらん。。。
+
+* Git 使い方 見出し一覧
+http://transitive.info/article/git/
+
 * 怖くないGit
-　rebaseとか丁寧。push後にrebaseするとpush出来ない理由とか/First Fowrad
-	http://www.slideshare.net/kotas/git-15276118
+rebaseとか丁寧。push後にrebaseするとpush出来ない理由とか/First Fowrad
+http://www.slideshare.net/kotas/git-15276118
