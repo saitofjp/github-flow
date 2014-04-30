@@ -24,4 +24,9 @@ pull requstのマージ時に、すぐにブランチ削除するとだめっぽ
 開発が重たくなりそう
 
 * 追従のやり方間違えると壊れる
-　pullじゃなくてfetch-merge master
+　pullじゃなくて
+　　どっちが良いんだろ
+　	fetch-merge master
+　  fetch-rebase master
+　  
+　  
