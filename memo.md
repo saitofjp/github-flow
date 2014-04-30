@@ -1,3 +1,4 @@
+やりたい
 ===============
 * git-svnをweb stormで使いたいのだが？
 
@@ -54,7 +55,7 @@ upstream
 ----
 * git pull を --set-upstream-to で引数無しで実行可能にする
   http://qiita.com/kjirou/items/e0469aac0e128be380d6
-*  git push &lt;repository&gt; &lt;refspec&gt;
+*  git push <repository> <refspec>
   -u オプションを付けると、対象のブランチをリモートリポジトリに追跡させることができます。 これによって、以降の push や fetch / pull コマンドで repository を省略した場合でも正しく変更内容を反映/取得することができるようになります。
   git push -u の -u は、 --set-upstream と同じで、追跡ブランチに登録するというオプション、だと思う。
 * git config --global push.default upstream
