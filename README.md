@@ -36,10 +36,6 @@ flow
 課題
 ===
 
-* リモートのブランチの削除が追従に失敗する
-PullRequstのマージ後にすぐ削除すると、masterとブランチで差が付くため。
-PullRequst語に、ブランチにmasterをマージすりゃ出来るが明らかにめんどい。
-
 * ブランチ駆動にするとコンフリクトの検知がすごく後の方になる。
 開発が重たくなりそう
 
@@ -48,7 +44,9 @@ orizin:master local:branchでpullでやるとだいだい壊れる
 mergeかrebeaseになる
 fetch-merge master
 fetch-rebase master
-　  
+
+* リモートのブランチの削除が追従に失敗する
+リモートの追従は出来てるけど、ローカルのブランチは削除されない。そういう仕様っぽい
 
 mege or rebase？
 ===
