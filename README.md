@@ -27,7 +27,10 @@ flow
 6. merge pull reqeust
 	web ui -> pull reqeust -> 
 	※ブランチの削除は任意で
+s
 
+
+gagkag
 7. merge from master
 	他のブランチにマスターの変更を取り込もう
 	やり方が二つあるため課題
